@@ -50,7 +50,7 @@ def gettime():
         f1.write("\n")
     f1.close()
 
-    f2 = open("sendtime.txt", "w")
+    f2 = open("send.txt", "w")
     for i in s_time:
         f2.truncate()
         f2.write(i)
@@ -59,7 +59,6 @@ def gettime():
 
     receive.close()
     sendtime.close()
-
 
 if __name__ == '__main__':
     getmillisecond()
