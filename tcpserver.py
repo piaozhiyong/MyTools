@@ -1,5 +1,6 @@
 import socketserver
 
+
 class MyTCPHandler(socketserver.BaseRequestHandler):
     """
     The request handler class for our server.
@@ -17,9 +18,9 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
         # just send back the same data, but upper-cased
         self.request.sendall(self.data.upper())
 
+
 if __name__ == "__main__":
     HOST, PORT = "localhost", 9999
-
     # Create the server, binding to localhost on port 9999
     with socketserver.TCPServer((HOST, PORT), MyTCPHandler) as server:
         # Activate the server; this will keep running until you
