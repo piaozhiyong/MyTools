@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>960</width>
-    <height>700</height>
+    <height>800</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -32,7 +32,7 @@
     <string>1.连接TCP服务端</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_ipaddress">
+  <widget class="QLineEdit" name="LEdit_ipaddr">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -58,7 +58,7 @@
     <string>端口号</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pBtn_connectserver">
+  <widget class="QPushButton" name="pBtn_connserv">
    <property name="geometry">
     <rect>
      <x>190</x>
@@ -110,7 +110,7 @@
     <string>IP地址</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_port">
+  <widget class="QLineEdit" name="LEdit_port">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -123,7 +123,7 @@
     <string>8000</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_connectstatu">
+  <widget class="QLabel" name="lab_connstatu">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -154,12 +154,12 @@
     <rect>
      <x>510</x>
      <y>120</y>
-     <width>131</width>
+     <width>201</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>3.接收消息</string>
+    <string>3.接收消息(以字符串形式显示)</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="textEdit">
@@ -168,8 +168,51 @@
      <x>10</x>
      <y>140</y>
      <width>431</width>
-     <height>551</height>
+     <height>651</height>
     </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;	&amp;quot;set&amp;quot;: true,    &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;	&amp;quot;version&amp;quot;: 1,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;	&amp;quot;param&amp;quot;:	{&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&amp;quot;band&amp;quot;: 0,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&amp;quot;rfmode&amp;quot;: 0,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&amp;quot;hwmode&amp;quot;: ‘b’,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&amp;quot;htmode&amp;quot;:	 20,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&amp;quot;transmission closed&amp;quot;: 0,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&amp;quot;changeangle strategy&amp;quot;: {&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;start&amp;quot;: 0,	&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;end &amp;quot;: 120,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;step&amp;quot;: 10,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;channel&amp;quot;: 1,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;time&amp;quot;: 1&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		},	&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&amp;quot;changechannel strategy&amp;quot;: {&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;start&amp;quot;: 1,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;end&amp;quot;: 14,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;step&amp;quot;: 1,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;angle&amp;quot;: 120,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;time&amp;quot;: 1&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		},&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&amp;quot;changeall strategy&amp;quot;:	{&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;start angle &amp;quot;: 1,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;end angle &amp;quot;: 14,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot; angle step&amp;quot;: 1,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot; channel step&amp;quot;: 1,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;start channel&amp;quot;: 1,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;end  channel&amp;quot;: 13,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;time&amp;quot;: 1&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		},&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&amp;quot;nostrategy&amp;quot;:	{&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;channel&amp;quot;: 1,&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;			&amp;quot;angle&amp;quot;: 120&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		}&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;}&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser">
@@ -178,7 +221,7 @@
      <x>510</x>
      <y>140</y>
      <width>431</width>
-     <height>551</height>
+     <height>651</height>
     </rect>
    </property>
   </widget>
@@ -195,7 +238,7 @@
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;使用的是短连接，输入内容直接点击发送即可。&lt;/p&gt;&lt;p&gt;本地tcp服务端ip为127.0.0.1:9999&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -213,7 +256,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="lineEdit_timeout">
+     <widget class="QLineEdit" name="LEdit_timeout">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
         <horstretch>0</horstretch>
@@ -225,6 +268,9 @@
         <width>41</width>
         <height>20</height>
        </size>
+      </property>
+      <property name="inputMask">
+       <string/>
       </property>
       <property name="text">
        <string>1</string>
