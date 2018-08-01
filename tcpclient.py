@@ -108,7 +108,7 @@ class TCPClient(QDialog):
         try:
             # 设置超时时间，以秒为单位
             self.sock.settimeout(int(timeout))
-            self.sock.sendall(bytes(data + "\n", "utf-8"))
+            self.sock.sendall(bytes(data, "utf-8"))
             # Receive data from the server and shut down
             received = str(self.sock.recv(1024), "utf-8")
             self.sock.shutdown(socket.SHUT_RDWR)
